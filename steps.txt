@@ -1,0 +1,25 @@
+install nodejs
+mkdir myapp
+cd myapp
+npm init
+npm install express --save
+
+//sample code
+Start your text editor of choice and create a file named app.js. 
+var express = require('express');
+var app = express();
+app.get('/', function (req, res) {
+  res.send('Hello World!');
+});
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
+//above code will start app
+
+other packages
+npm install body-parser
+npm install --save path
+npm install -g require
+npm install request
+
+//keep html file name as index.html
